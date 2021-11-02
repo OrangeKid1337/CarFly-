@@ -1,0 +1,6 @@
+f (Settings::carfly)
+        {
+            if (SDK::Syscall::NtGetAsyncKeyState(0x57) /* 0X57 = W Key on keyboard */)
+            {
+       ue->PlayerController->AcknowledgedPawn->CurrentCar->CustomTimeDilation = 2.0f;
+//make sure to have CurrentCar and sdk ill release soon
