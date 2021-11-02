@@ -1,4 +1,4 @@
-f (Settings::carfly)
+if (Settings::carfly)
         {
             if (SDK::Syscall::NtGetAsyncKeyState(0x57) /* 0X57 = W Key on keyboard */)
             {
